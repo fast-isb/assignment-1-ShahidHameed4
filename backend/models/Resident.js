@@ -16,4 +16,5 @@ const Resident = new Schema({
 
 
 
-module.exports = mongoose.model('Resident', Resident);
+var resi = mongoose.model('Resident', Resident);
+export default resi;

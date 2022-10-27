@@ -1,18 +1,20 @@
 import express from 'express';
-import mongoose from 'mongoose';
+
 
 const router = express.Router();
-import Annoucement from '../models/Annoucement.js'
+import Resident from '../models/Resident.js'
 
 
-//Annoucements 
+//Residents
 router.post("/create",function(req,res){
     
 
-    var posts = new Annoucement({
-        date : Date.now() ,
-        desc : req.body.desc,
-         addedBy : req.body.addedBy,
+    var posts = new Resident({
+    fname : req.body.fname,
+    lname : req.body.lname,
+    cnic : req.body.cnic,
+    email : req.body.email,
+    password : req.body.password,
       });
 
 
@@ -28,11 +30,11 @@ router.post("/create",function(req,res){
         
 
 });
-router.get("/get/:id",function(req,res){
+router.get("/get/:cnic",function(req,res){
   
 
     
-    let posts = Annoucement.findOne({_id: req.body.id}, function(err, posts){
+    let posts = Resident.findOne({cnic: req.params.cnic}, function(err, posts){
         if(err){
             console.log(err);
         }
@@ -49,7 +51,7 @@ router.get("/getAll",function(req,res){
 
 
 
-        let posts = Annoucement.find({}, function(err, posts){
+        let posts = Resident.find({}, function(err, posts){
             if(err){
                 console.log(err);
             }
@@ -66,7 +68,7 @@ router.put("/update",function(req,res){
       var myquery = { _id: req.body._id };
      var newvalues = { $set: {name: req.body.name} };
 
-        let posts = Person.updateOne(myquery,newvalues, function(err, posts){
+        let posts = Resident.updateOne(myquery,newvalues, function(err, posts){
             if(err){
                 console.log(err);
             }
@@ -80,7 +82,7 @@ router.delete("/delete/:id",function(req,res){
    
        var myquery = { _id: req.params.id };
  
-         let posts = Annoucement.deleteOne(myquery, function(err, posts){
+         let posts = Resident.deleteOne(myquery, function(err, posts){
              if(err){
                  console.log(err);
              }
