@@ -32,7 +32,7 @@ const collapseItems = [
         >
           <AcmeLogo />
           <Text b color="inherit" hideIn="xs">
-            ACME
+            HSMS
           </Text>
         </Navbar.Brand>
         <Navbar.Content
@@ -41,12 +41,12 @@ const collapseItems = [
           hideIn="xs"
           variant="highlight-rounded"
         >
-          <Navbar.Link href="#">Features</Navbar.Link>
+          <Navbar.Link href="/createResident">Create Resident</Navbar.Link>
           <Navbar.Link  href="/ViewAnnoucements">
             View Annoucements
           </Navbar.Link>
           <Navbar.Link href="/CreateAnnoucements">Create Annoucement</Navbar.Link>
-          <Navbar.Link href="#">Company</Navbar.Link>
+          
         </Navbar.Content>
         <Navbar.Content
           css={{
