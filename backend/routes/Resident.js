@@ -15,6 +15,7 @@ router.post("/create",function(req,res){
     cnic : req.body.cnic,
     email : req.body.email,
     password : req.body.password,
+    age : req.body.age,
       });
 
 
@@ -62,12 +63,11 @@ router.get("/getAll",function(req,res){
         
 
 });
-router.put("/update",function(req,res){
+router.put("/update/:cnic",function(req,res){
   
    console.log(req.body);
-      var myquery = { _id: req.body._id };
-     var newvalues = { $set: {name: req.body.name} };
-
+      var myquery = { cnic: req.params.cnic };
+     var newvalues = { $set: {fname: req.body.fname,lname:req.body.lname,password:req.body.password,email:req.body.email,age:req.body.age} };
         let posts = Resident.updateOne(myquery,newvalues, function(err, posts){
             if(err){
                 console.log(err);
