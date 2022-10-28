@@ -8,6 +8,7 @@ const Resident = new Schema({
     cnic : { type : String, required : true, max : [127, "Max Length is 127 characters"] },
     email : { type : String, required : true, max : [127, "Max Length is 127 characters"] },
     password : { type : String, required : true, max : [127, "Max Length is 127 characters"] },
+    age : { type : Number, required : true },
 },
 {
     timestamps: true

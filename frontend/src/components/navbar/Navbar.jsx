@@ -1,6 +1,7 @@
 import { Navbar, Link, Text, Avatar, Dropdown } from "@nextui-org/react";
 
 import { AcmeLogo } from "./AcmeLogo.js";
+import { Layout } from "./Layout.js";
 
 
 function Navbar1() {
@@ -18,6 +19,8 @@ const collapseItems = [
   ];
 
     return (
+
+      <Layout>
         <Navbar isBordered variant="sticky">
         <Navbar.Toggle showIn="xs" />
         <Navbar.Brand
@@ -39,10 +42,10 @@ const collapseItems = [
           variant="highlight-rounded"
         >
           <Navbar.Link href="#">Features</Navbar.Link>
-          <Navbar.Link isActive href="#">
-            Customers
+          <Navbar.Link  href="/ViewAnnoucements">
+            View Annoucements
           </Navbar.Link>
-          <Navbar.Link href="#">Pricing</Navbar.Link>
+          <Navbar.Link href="/CreateAnnoucements">Create Annoucement</Navbar.Link>
           <Navbar.Link href="#">Company</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content
@@ -119,6 +122,8 @@ const collapseItems = [
           ))}
         </Navbar.Collapse>
       </Navbar>
+
+      </Layout>
     
 
      )
