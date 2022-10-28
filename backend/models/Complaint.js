@@ -1,11 +1,11 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose'
 
 mongoose.connect('mongodb://localhost:27017/scdProject');
 const Schema = mongoose.Schema;
 const Complaint = new Schema({
     id : {type : String, required : true, max : [12, "Max Length is 12 characters"] },
     hNo : { type : String, required : true, max : [127, "Max Length is 127 characters"] },
-    email : { type: Date, required : true},
+    email : { type: String, required : true},
     problem : {type : String, required : true, max : [127, "Max Length is 127 characters"] },
     desc : {type : String, required : true, max : [127, "Max Length is 127 characters"] },
     status : {type : String, required : true, max : [12, "Max Length is 12 characters"] },
@@ -18,4 +18,5 @@ const Complaint = new Schema({
 
 
 
-module.exports = mongoose.model('Complaint', Complaint);
+var model = mongoose.model('Complaint', Complaint);
+export default model;

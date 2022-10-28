@@ -8,9 +8,11 @@ app.use(express.json()); //important for recieving api calls
 
 import AnnoucementRouter from './routes/Annoucement.js'
 import ResidentRouter from './routes/Resident.js'
+import ComplaintRouter from './routes/Complaint.js'
 
 app.use('/api/Annoucement',AnnoucementRouter);
 app.use('/api/Residents',ResidentRouter);
+app.use('/api/Complaint',ComplaintRouter);
 app.get("/get",function(req,res){
   
 
