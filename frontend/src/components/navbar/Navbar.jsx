@@ -40,11 +40,11 @@ function Navbar1 () {
           hideIn='xs'
           variant='highlight-rounded'
         >
-          <Navbar.Link href='/createResident'>Create Resident</Navbar.Link>
-          <Navbar.Link href='/ViewAnnoucements'>
+          <Navbar.Link href='#/createResident'>Create Resident</Navbar.Link>
+          <Navbar.Link href='#/ViewAnnoucements'>
             View Annoucements
           </Navbar.Link>
-          <Navbar.Link href='/CreateAnnoucements'>Create Annoucement</Navbar.Link>
+          <Navbar.Link href='#/CreateAnnoucements'>Create Annoucement</Navbar.Link>
 
         </Navbar.Content>
         <Navbar.Content
