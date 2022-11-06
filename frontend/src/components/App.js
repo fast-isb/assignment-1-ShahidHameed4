@@ -1,14 +1,14 @@
 
 import './App.css'
 import Navbar1 from './navbar/Navbar'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import CreateAnnouncements from './Annoucements/createAnnouncements'
 import ViewAnnouncements from './Annoucements/ViewAnnouncemnts'
 import CreateResident from './Residents/createResidents'
 
 function App () {
   return (
-    <BrowserRouter>
+    <HashRouter>
 
       <Navbar1 />
       <Routes>
@@ -17,7 +17,7 @@ function App () {
         <Route path='/createResident' element={<CreateResident />} />
       </Routes>
 
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
