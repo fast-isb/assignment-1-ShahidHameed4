@@ -1,10 +1,10 @@
-import { Text, Spacer } from "@nextui-org/react"
-import { Box } from "./Box.js"
+import { Text, Spacer } from '@nextui-org/react'
+import { Box } from './Box.js'
 
 export const Content = () => (
-  <Box css={{px: "$12", mt: "$8", "@xsMax": {px: "$10"}}}>
+  <Box css={{ px: '$12', mt: '$8', '@xsMax': { px: '$10' } }}>
     <Text h2>Lorem ipsum dolor sit amet</Text>
-    <Text size="$lg">
+    <Text size='$lg'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Purus gravida quis blandit turpis. Augue neque gravida in
       fermentum et sollicitudin ac orci. Et sollicitudin ac orci phasellus egestas. Elementum tempus
@@ -12,7 +12,7 @@ export const Content = () => (
       placerat duis ultricies.
     </Text>
     <Spacer y={1} />
-    <Text size="$lg">
+    <Text size='$lg'>
       Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Praesent semper feugiat nibh
       sed pulvinar. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Malesuada
       proin libero nunc consequat interdum varius sit amet. Lectus quam id leo in vitae. Sed viverra
@@ -20,7 +20,7 @@ export const Content = () => (
       gravida in.
     </Text>
     <Spacer y={1} />
-    <Text size="$lg">
+    <Text size='$lg'>
       Tincidunt vitae semper quis lectus nulla at volutpat diam. Gravida dictum fusce ut placerat.
       Erat velit scelerisque in dictum non. Tempus quam pellentesque nec nam aliquam sem et tortor
       consequat. Eu nisl nunc mi ipsum faucibus. Cras fermentum odio eu feugiat pretium nibh. Vel
@@ -30,7 +30,7 @@ export const Content = () => (
       tellus orci ac.
     </Text>
     <Spacer y={1} />
-    <Text size="$lg">
+    <Text size='$lg'>
       Tempor orci dapibus ultrices in iaculis nunc sed augue lacus. In pellentesque massa placerat
       duis ultricies. Sit amet massa vitae tortor condimentum. Morbi tincidunt augue interdum velit
       euismod. Aliquet enim tortor at auctor urna nunc id. A scelerisque purus semper eget. Vitae
@@ -42,7 +42,7 @@ export const Content = () => (
       phasellus vestibulum lorem sed risus.
     </Text>
     <Spacer y={1} />
-    <Text size="$lg">
+    <Text size='$lg'>
       Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel. Imperdiet massa tincidunt
       nunc pulvinar sapien et ligula ullamcorper malesuada. Faucibus pulvinar elementum integer enim
       neque volutpat. Gravida arcu ac tortor dignissim convallis aenean. Lectus quam id leo in
@@ -56,7 +56,7 @@ export const Content = () => (
       risus nec feugiat in fermentum posuere. Morbi tempus iaculis urna id. Amet commodo nulla
       facilisi nullam vehicula ipsum a arcu.
     </Text>
-    <Text size="$lg">
+    <Text size='$lg'>
       Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Praesent semper feugiat nibh
       sed pulvinar. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Malesuada
       proin libero nunc consequat interdum varius sit amet. Lectus quam id leo in vitae. Sed viverra
@@ -64,7 +64,7 @@ export const Content = () => (
       gravida in.
     </Text>
     <Spacer y={1} />
-    <Text size="$lg">
+    <Text size='$lg'>
       Tincidunt vitae semper quis lectus nulla at volutpat diam. Gravida dictum fusce ut placerat.
       Erat velit scelerisque in dictum non. Tempus quam pellentesque nec nam aliquam sem et tortor
       consequat. Eu nisl nunc mi ipsum faucibus. Cras fermentum odio eu feugiat pretium nibh. Vel
@@ -75,4 +75,4 @@ export const Content = () => (
     </Text>
     <Spacer y={1} />
   </Box>
-);
+)
