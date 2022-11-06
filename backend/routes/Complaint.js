@@ -1,5 +1,5 @@
 import express from 'express'
-import mongoose from 'mongoose'
+
 import Complaint from '../models/Complaint.js'
 
 const router = express.Router()

@@ -1,5 +1,5 @@
 import express from 'express'
-import mongoose from 'mongoose'
+
 import Annoucement from '../models/Annoucement.js'
 
 const router = express.Router()
