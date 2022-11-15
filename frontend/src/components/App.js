@@ -9,7 +9,7 @@ import CreateResident from './Residents/createResidents'
 function App () {
   return (
     
-<>
+<div data-testid = "testHeader">
       <Navbar1 />
       <Routes>
         <Route path='/CreateAnnoucements' element={<CreateAnnouncements />} />
@@ -17,7 +17,7 @@ function App () {
         <Route path='/createResident' element={<CreateResident />} />
       </Routes>
 
-      </>
+      </div>
   )
 }
 

@@ -19,7 +19,7 @@ function Navbar1 () {
 
   return (
 
-    <Layout>
+    <Layout data-testid = "testHeader">
       <Navbar isBordered variant='sticky'>
         <Navbar.Toggle showIn='xs' />
         <Navbar.Brand
