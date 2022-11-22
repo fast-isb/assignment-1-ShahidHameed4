@@ -19,8 +19,8 @@ function Navbar1 () {
 
   return (
 
-    <Layout data-testid = "testHeader">
-      <Navbar isBordered variant='sticky'>
+    <Layout>
+      <Navbar  data-testid = "testHeader" isBordered variant='sticky'>
         <Navbar.Toggle showIn='xs' />
         <Navbar.Brand
           css={{

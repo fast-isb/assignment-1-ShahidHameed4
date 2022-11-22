@@ -6,6 +6,7 @@ import CreateAnnouncements from './Annoucements/createAnnouncements'
 import ViewAnnouncements from './Annoucements/ViewAnnouncemnts'
 import CreateResident from './Residents/createResidents'
 
+
 function App () {
   return (
     

@@ -1,7 +1,7 @@
 
 import { Input, Grid, Button } from '@nextui-org/react'
 import { useState } from 'react'
-import Axios from 'axios'
+//import Axios from 'axios'
 
 function CreateResidents () {
   const [fname, setfname] = useState(0)
