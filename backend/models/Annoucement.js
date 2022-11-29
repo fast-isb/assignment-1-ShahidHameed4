@@ -1,6 +1,5 @@
-import mongoose from 'mongoose'
+import mongoose from '../Database/mongoose.js'
 
-mongoose.connect('mongodb://localhost:27017/scdProject')
 const Schema = mongoose.Schema
 const Annoucement = new Schema({
   date: { type: Date, required: true },

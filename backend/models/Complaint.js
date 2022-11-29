@@ -1,6 +1,4 @@
-import mongoose from 'mongoose'
-
-mongoose.connect('mongodb://localhost:27017/scdProject')
+import mongoose from '../Database/mongoose.js'
 const Schema = mongoose.Schema
 const Complaint = new Schema({
   id: { type: String, required: true, max: [12, 'Max Length is 12 characters'] },

@@ -1,6 +1,4 @@
-const mongoose = require('mongoose')
-
-mongoose.connect('mongodb://localhost:27017/scdProject')
+import mongoose from '../Database/mongoose.js'
 const Schema = mongoose.Schema
 const Admin = new Schema({
   name: { type: String, required: true, max: [127, 'Max Length is 127 characters'] },

@@ -4,6 +4,8 @@ import cors from 'cors' // important for recieving api calls
 import AnnoucementRouter from './routes/Annoucement.js'
 import ResidentRouter from './routes/Resident.js'
 import ComplaintRouter from './routes/Complaint.js'
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 const app = express()
 app.use(cors()) // important for recieving api calls
