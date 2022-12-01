@@ -12,7 +12,7 @@ function CreateResidents () {
   const [password, setpassword] = useState(0)
 
   const createResident = () => {
-    Axios.post('http://localhost:5000/api/Residents/create/', {
+    Axios.post('http://54.238.167.56:5000/api/Residents/create/', {
 
       fname,
       lname,

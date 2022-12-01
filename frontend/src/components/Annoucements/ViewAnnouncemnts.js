@@ -7,7 +7,7 @@ function ViewAnnouncements () {
   const [Annoucement, setAnnoucement] = useState([])
   useEffect(() => {
     (async () => {
-      Axios.get('http://localhost:5000/api/Annoucement/getAll/').then((response) => {
+      Axios.get('http://54.238.167.56:5000/api/Annoucement/getAll/').then((response) => {
         setAnnoucement(response.data)
       })
     })()

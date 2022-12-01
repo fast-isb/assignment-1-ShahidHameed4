@@ -8,7 +8,7 @@ function CreateAnnouncements () {
   const [Description, setDesc] = useState(0)
 
   const createAnnoucement = () => {
-    Axios.post('http://localhost:5000/api/Annoucement/create/', {
+    Axios.post('http://54.238.167.56:5000/api/Annoucement/create/', {
 
       desc: Description,
       addedBy: 'Admin'
