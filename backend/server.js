@@ -4,6 +4,8 @@ import cors from 'cors' // important for recieving api calls
 import AnnoucementRouter from './routes/Annoucement.js'
 import ResidentRouter from './routes/Resident.js'
 import ComplaintRouter from './routes/Complaint.js'
+import PropertyRouter from './routes/Property.js'
+import ContactRouter from './routes/ContactUs.js'
 import * as dotenv from 'dotenv';
 dotenv.config();
 
@@ -15,6 +17,8 @@ app.use(express.json())
 app.use('/api/Annoucement', AnnoucementRouter)
 app.use('/api/Residents', ResidentRouter)
 app.use('/api/Complaint', ComplaintRouter)
+app.use('/api/Property', PropertyRouter)
+app.use('api/contactus', ContactRouter)
 app.get('/get', function (req, res) {
   res.send('<h1>bhashusahshu</h1>')
   // let posts = Person.findOne({}, function(err, posts){

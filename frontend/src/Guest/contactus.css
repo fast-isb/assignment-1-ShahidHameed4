@@ -1,0 +1,50 @@
+.input-box{
+    background-color: rgb(252, 252, 252);
+    display: inline-block;
+    padding-left: 1in;
+    padding-right: 1in;
+    padding-top: 0.5in;
+    padding-bottom: 0.5in;
+    border: 3px solid black;
+    /* margin-top: 0.5in; */
+    margin-left: 5in;
+    box-shadow: 1in;
+    height: fit-content;
+    border-radius: 4px;
+
+}
+
+#nameid,#phoneid,#concernid{
+
+    display: block;
+    width: 3in;
+    margin: 20px;
+    border-radius: 4px;
+
+}
+#concernid{
+    height: 1in;
+    
+}
+#heading{
+    text-align: center;
+}
+
+#buttonid{
+    background-color: brown;
+    color: white;
+    margin-left: 1.3in;
+    border: none;
+    padding: 5px;
+    /* margin-bottom: 15px; */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#buttonid:hover{
+    background-color: rgb(116, 5, 5);
+    color: white;
+    border: 1px brown solid;
+    /* box-shadow: 2px 2px 2px 2px red;; */
+    
+}
