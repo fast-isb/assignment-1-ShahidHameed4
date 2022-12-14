@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
-        docker login -u shahid0404 --password-stdin ${{ secrets.DOCKERPW }}
+        docker login -u shahid0404 --password-stdin shahid123
         docker compose up
         docker tag frontend shahid0404/frontendproject
         docker tag backend shahid0404/backendproject
