@@ -16,8 +16,9 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "shahid0404" --password-stdin 
-        docker compose up
-        docker tag assignment-1-shahidhameed4-frontend shahid0404/frontendproject
-        docker tag assignment-1-shahidhameed4-backend shahid0404/backendproject
+        docker build -t backend /backend
+        docker build -t frontend /frontend
+        docker tag frontend shahid0404/frontendproject
+        docker tag backend shahid0404/backendproject
         docker push shahid0404/frontendproject
         docker push shahid0404/backendproject
