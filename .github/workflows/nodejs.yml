@@ -2,9 +2,9 @@ name: Automating Contenarization
 
 on:
   push:
-   branches: [ master ]
+   branches: [ Authentication ]
   pull_request:
-    branches: [ master ]
+    branches: [ Authentication ]
       
 jobs:
   build:
