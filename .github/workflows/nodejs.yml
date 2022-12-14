@@ -1,22 +1,23 @@
-name: Super-Linter
+name: Automating Contenarization
 
-on: push
-
-jobs:
-  super-lint:
-    name: Lint code base
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./frontend
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Run Super-Linter
-        uses: github/super-linter@v3.17.0
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  
+on:
+  push:
+   branches: [ master ]
+  pull_request:
+    branches: [ master ]
       
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build & Push Image
+      run: |
+        echo "${{ secrets.DOCKERPW }}" | docker login -u "shahid0404" --password-stdin
+        docker compose up
+        docker tag frontend shahid0404/frontendproject
+        docker tag backend shahid0404/backendproject
+        docker push shahid0404/frontendproject
+        docker push shahid0404/backendproject
